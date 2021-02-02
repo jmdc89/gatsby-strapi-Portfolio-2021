@@ -8,6 +8,8 @@ import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 
 export default () => {
-  return <Layout>index page</Layout>
+  return <Layout>
+      <Hero />
+  </Layout>
 }
 // ...GatsbyImageSharpFluid
