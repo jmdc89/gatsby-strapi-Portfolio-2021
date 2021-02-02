@@ -406,6 +406,12 @@ Hero
 ===============
 */
 /* underline added to globals */
+
+.typewriter-style {
+  color: var(--clr-primary-5);
+}
+
+
 .hero {
   margin-top: -5rem;
   padding-top: 5rem;
@@ -473,7 +479,7 @@ Hero
   }
 
   .hero-info {
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 5;
   }
 
   .hero h4 {

@@ -3,6 +3,7 @@ import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
+import Typewriter from "typewriter-effect";
 // ...GatsbyImageSharpFluid
 
 const query = graphql`
@@ -14,8 +15,7 @@ const query = graphql`
       }
     }
   }
-}
-`
+}`
 
 const Hero = () => {
   const {file:{childImageSharp:{ fluid }}} = useStaticQuery(query);
@@ -26,9 +26,26 @@ const Hero = () => {
               <article className="hero-info">
                   <div>
                       <div className="underline"></div>
-                      <h1>José Manuel.</h1>
-                      <h2>Basically a pretty good autodidact.</h2>
-                      <h3>I´m an architect specializing in building (and occasionally designing) exceptional websites, applications, and everything in between</h3>
+                      <h1>José M.D.C.</h1>
+                      <h2 className="typewriter-style"><Typewriter 
+                        onInit={(typewriter) => {
+                            typewriter.typeString("Arquitect.")
+                            .pauseFor(1000)
+                            .deleteAll()
+                            .typeString("Researcher.")
+                            .pauseFor(1000)
+                            .deleteAll()
+                            .typeString("Computational Designer.")
+                            .pauseFor(1000)
+                            .deleteAll()
+                            .typeString("Autodidact.")
+                            .pauseFor(1000)
+                            .deleteAll()
+                            .typeString("Developer.")
+                            .start();       
+                        }}
+                      /></h2>
+                      <h3>Designing and building exceptional websites, applications, and everything in between</h3>
                       <Link to='/contact' className="btn">
                           Get in touch
                       </Link>
