@@ -14,7 +14,8 @@ export default ({data}) => {
     allStrapiBlogs:{nodes:blogs}
   } = data
 
-  return <Layout>
+  return (
+  <Layout>
       <Hero />
       <Services />
       <Jobs />
@@ -22,6 +23,7 @@ export default ({data}) => {
       showLink/>
       <Blogs blogs={blogs} title="Latest Articles" showLink />
   </Layout>
+  )
 }
 
 export const query = graphql`
