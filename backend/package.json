@@ -1,0 +1,38 @@
+{
+  "name": "gatsby-strapi-portfolio-2021-api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "cross-env ENV_PATH=.env strapi develop",
+    "start": "cross-env ENV_PATH=.env strapi start",
+    "build": "cross-env ENV_PATH=.env strapi build",
+    "strapi": "cross-env ENV_PATH=.env strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "knex": "<0.20.0",
+    "sqlite3": "5.0.0",
+    "strapi": "3.4.5",
+    "strapi-admin": "3.4.5",
+    "strapi-connector-bookshelf": "3.4.5",
+    "strapi-plugin-content-manager": "3.4.5",
+    "strapi-plugin-content-type-builder": "3.4.5",
+    "strapi-plugin-email": "3.4.5",
+    "strapi-plugin-upload": "3.4.5",
+    "strapi-plugin-users-permissions": "3.4.5",
+    "strapi-provider-upload-cloudinary": "^3.4.6",
+    "strapi-utils": "3.4.5"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "5e9caa4b-9324-4dbf-adbf-12945a1d2ead"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
