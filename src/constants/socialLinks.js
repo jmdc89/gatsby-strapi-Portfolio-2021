@@ -13,15 +13,16 @@ const data = [
     url: "https://www.facebook.com/josemanuel.dominguez.710/",
   },
   {
-    id: 2,
-    icon: <FaLinkedinIn className="social-icon"></FaLinkedinIn>,
-    url: "https://www.linkedin.com/in/jos%C3%A9-manuel-dom%C3%ADnguez-425b1b113/",
-  },
-  {
     id: 4,
     icon: <FaGithub className="social-icon"></FaGithub>,
     url: "https://github.com/jmdc89",
   },
+  {
+    id: 2,
+    icon: <FaLinkedinIn className="social-icon"></FaLinkedinIn>,
+    url: "https://www.linkedin.com/in/jos%C3%A9-manuel-dom%C3%ADnguez-425b1b113/",
+  },
+  
   // {
   //   id: 5,
   //   icon: <FaTwitter className="social-icon"></FaTwitter>,
@@ -31,7 +32,7 @@ const data = [
 const links = data.map(link => {
   return (
     <li key={link.id}>
-      <a href={link.url} className="social-link">
+      <a href={link.url} target="_blank" className="social-link">
         {link.icon}
       </a>
     </li>
