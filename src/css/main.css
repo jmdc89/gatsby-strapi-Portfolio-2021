@@ -910,6 +910,11 @@ About Page
   margin-left: 0;
   margin-right: 0;
 }
+
+.about-text {
+  text-transform: capitalize;
+}
+
 .about-text p {
   line-height: 2;
 }
@@ -946,6 +951,8 @@ About Page
     grid-column: 6 / -1;
   }
 }
+
+
 /*
 ===============
 Contact Page
