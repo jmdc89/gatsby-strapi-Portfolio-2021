@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: "JMDC Portfolio",
     description: "This is JMDC WebDev Portfolio Site",
-    author: "JMDC,
+    author: "JMDC",
     twitterUsername: "@rminima.design",
     image: "/twitter-img.png",
     siteUrl: "https://jmdevc.netlify.app",
