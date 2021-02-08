@@ -13,6 +13,7 @@ module.exports = {
     image: "/twitter-img.png",
     siteUrl: "https://jmdevc.netlify.app",
   },
+
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
