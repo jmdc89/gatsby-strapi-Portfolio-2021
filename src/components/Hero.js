@@ -29,7 +29,7 @@ const Hero = () => {
                       <h1>José M.D.C.</h1>
                       <h2 className="typewriter-style"><Typewriter
                         onInit={(typewriter) => {
-                            typewriter.typeString("Arquitect.")
+                            typewriter.typeString("Architect.")
                             .pauseFor(750)
                             .deleteAll()
                             .typeString("Researcher.")

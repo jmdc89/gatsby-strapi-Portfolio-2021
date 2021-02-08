@@ -19,6 +19,7 @@ Variables
   --clr-primary-3: hsl(185, 81%, 29%);
   --clr-primary-4: hsl(184, 77%, 34%);
   --clr-primary-5: #2caeba;
+
   /* lighter shades of primary color */
   --clr-primary-6: hsl(185, 57%, 50%);
   --clr-primary-7: hsl(184, 65%, 59%);
@@ -69,6 +70,7 @@ body {
   font-size: 0.875rem;
   margin-top: 5rem;
 }
+
 ul {
   list-style-type: none;
 }
@@ -608,6 +610,16 @@ Jobs
 .job-icon {
   color: var(--clr-primary-5);
 }
+
+@media screen and (max-width: 576px) {
+  .btn-container {
+    font-size: 1rem;
+  }
+  .job-btn {
+    font-size: 3vw;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .jobs-center {
     width: 90vw;
@@ -629,6 +641,7 @@ Jobs
     box-shadow: -2px 0 var(--clr-primary-5);
   }
 }
+
 
 /*
 =============== 
