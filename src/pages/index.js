@@ -5,7 +5,7 @@ import Hero from "../components/Hero"
 import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
-import Blogs from "../components/Blogs"
+// import Blogs from "../components/Blogs"
 import SEO from '../components/SEO'
 
 export default ({data}) => {
@@ -23,7 +23,7 @@ export default ({data}) => {
       <Jobs />
       <Projects projects={projects} title="Featured projects"
       showLink/>
-      <Blogs blogs={blogs} title="Latest Articles" showLink />
+      {/* <Blogs blogs={blogs} title="Latest Articles" showLink /> */}
   </Layout>
   )
 }
